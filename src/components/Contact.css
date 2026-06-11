@@ -1,0 +1,95 @@
+/* ---------- Contact panel ---------- */
+.contact__panel {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2.75rem 2.5rem 2.5rem;
+  text-align: center;
+}
+
+.contact__title {
+  font-size: 1.7rem;
+  margin-bottom: 0.9rem;
+}
+
+.contact__lead {
+  color: var(--text-muted);
+  max-width: 50ch;
+  margin: 0 auto 1.8rem;
+  line-height: 1.6;
+}
+
+.contact__cta {
+  justify-content: center;
+  margin-bottom: 2.25rem;
+}
+
+/* ---------- Contact method cards ---------- */
+.contact__methods {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  text-align: left;
+}
+
+.contact__card {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1rem 1.1rem;
+  border-radius: var(--radius-sm);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.contact__card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-cyan);
+}
+
+.contact__card-icon {
+  display: grid;
+  place-items: center;
+  font-size: 1.35rem;
+  color: var(--accent-cyan);
+  flex-shrink: 0;
+}
+
+.contact__card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.contact__card-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.contact__card-value {
+  font-size: 0.95rem;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.contact__card-arrow {
+  margin-left: auto;
+  color: var(--text-faint);
+  flex-shrink: 0;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.contact__card:hover .contact__card-arrow {
+  color: var(--accent-cyan);
+  transform: translate(2px, -2px);
+}
+
+@media (max-width: 620px) {
+  .contact__panel {
+    padding: 2rem 1.4rem;
+  }
+  .contact__methods {
+    grid-template-columns: 1fr;
+  }
+}
