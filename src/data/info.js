@@ -44,7 +44,7 @@ export const personal = {
 
   // Quick-glance stat cards in the Hero section.
   stats: [
-    { label: "Projects Completed", value: "4+" },
+    { label: "Projects Completed", value: "3+" },
     { label: "Technologies & Tools", value: "10+" },
     { label: "Status", value: "Open To Work" },
     { label: "Level", value: "Fresher" },
