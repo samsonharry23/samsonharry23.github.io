@@ -1,6 +1,3 @@
-// Reusable Framer Motion animation variants used across sections.
-// Keeping them here avoids repeating the same config in every component.
-
 export const fadeInUp = {
   hidden: { opacity: 0, y: 32 },
   visible: {
@@ -24,7 +21,6 @@ export const scaleIn = {
   },
 };
 
-// Parent wrapper that staggers its children's reveal.
 export const staggerContainer = (stagger = 0.12, delay = 0) => ({
   hidden: {},
   visible: {
@@ -32,7 +28,6 @@ export const staggerContainer = (stagger = 0.12, delay = 0) => ({
   },
 });
 
-// Shared props so every section reveals once when scrolled into view.
 export const revealOnScroll = {
   initial: "hidden",
   whileInView: "visible",

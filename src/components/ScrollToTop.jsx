@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FiArrowUp } from "react-icons/fi";
 import "./ScrollToTop.css";
 
-// Floating button that appears after scrolling down and returns to the top.
 export default function ScrollToTop() {
   const [visible, setVisible] = useState(false);
 

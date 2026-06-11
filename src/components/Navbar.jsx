@@ -18,7 +18,6 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const active = useActiveSection(sectionIds);
 
-  // Add a stronger blur/background once the user scrolls down a bit.
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", onScroll);
@@ -31,10 +30,8 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? "navbar--scrolled" : ""}`}>
       <div className="navbar__inner container">
         <a href="#home" className="navbar__logo" onClick={closeMenu}>
-          <span className="gradient-text">&lt;/&gt;</span> Portfolio
         </a>
 
-        {/* Desktop + mobile links (mobile toggles via the `open` class) */}
         <ul className={`navbar__links ${menuOpen ? "navbar__links--open" : ""}`}>
           {links.map((link) => (
             <li key={link.id}>

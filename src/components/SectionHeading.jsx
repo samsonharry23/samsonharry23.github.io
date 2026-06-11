@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { fadeInUp, revealOnScroll } from "../utils/motion";
 import "./SectionHeading.css";
 
-// Consistent heading used at the top of each section.
 export default function SectionHeading({ eyebrow, title, subtitle }) {
   return (
     <motion.header

@@ -32,7 +32,6 @@ export default function Skills() {
                     </div>
 
                     <div className="skills__bar">
-                      {/* Bar fills from 0 to its level when scrolled into view */}
                       <motion.span
                         className="skills__bar-fill"
                         initial={{ width: 0 }}

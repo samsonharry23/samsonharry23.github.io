@@ -10,7 +10,6 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
-  // Short page-load animation before the content fades in.
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -24,7 +23,7 @@ export default function App() {
     <>
       <Navbar />
       <main>
-        {/* Home + About are combined into the Hero section */}
+
         <Hero />
         <Projects />
         <Skills />

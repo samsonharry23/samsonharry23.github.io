@@ -4,7 +4,6 @@ import SectionHeading from "./SectionHeading";
 import { fadeInUp, staggerContainer, revealOnScroll } from "../utils/motion";
 import "./Experience.css";
 
-// Fresher-friendly placeholders. Swap these out as you gain experience.
 const items = [
   {
     icon: <FiBriefcase />,
@@ -16,7 +15,7 @@ const items = [
     icon: <FiAward />,
     title: "Professional Experience",
     status: "Awaiting Offer",
-    text: "Zero years of professional experience, 100% ready to change that. The only thing missing from my résumé is the job — a problem you're uniquely qualified to solve.",
+    text: "Zero years of professional experience, 100% ready to change that. The only thing missing from my resume is the job a problem you're uniquely qualified to solve.",
   },
 ];
 

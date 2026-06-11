@@ -1,9 +1,3 @@
-// ============================================================
-//  SKILLS DATA
-//  Grouped by category. Add a new skill by adding an object to
-//  the relevant "items" array. "level" (0–100) drives the bar.
-// ============================================================
-
 export const skillGroups = [
   {
     category: "Frontend",

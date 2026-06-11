@@ -4,7 +4,6 @@ import { FiGithub, FiExternalLink, FiX } from "react-icons/fi";
 import "./ProjectModal.css";
 
 export default function ProjectModal({ project, onClose }) {
-  // Close on Escape key and lock background scroll while open.
   useEffect(() => {
     const onKey = (e) => e.key === "Escape" && onClose();
     document.addEventListener("keydown", onKey);

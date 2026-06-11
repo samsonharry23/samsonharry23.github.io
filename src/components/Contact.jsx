@@ -7,7 +7,6 @@ import { fadeInUp, staggerContainer, revealOnScroll } from "../utils/motion";
 import "./Contact.css";
 
 export default function Contact() {
-  // Build the list of contact methods, skipping any left blank in info.js.
   const methods = [
     socials.email && {
       key: "email",
@@ -60,7 +59,7 @@ export default function Contact() {
           <h3 className="contact__title">Let's build something together.</h3>
           <p className="contact__lead">
             I'm currently open to internships and entry-level roles. The fastest
-            way to reach me is by email — I'll get back to you as soon as I can.
+            way to reach me is by email. I'll get back to you as soon as I can.
           </p>
 
           <a

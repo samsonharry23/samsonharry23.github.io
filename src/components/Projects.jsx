@@ -11,7 +11,6 @@ export default function Projects() {
   const [filter, setFilter] = useState("All");
   const [selected, setSelected] = useState(null);
 
-  // Build the unique list of technologies for the filter buttons.
   const technologies = useMemo(() => {
     const all = projects.flatMap((p) => p.tech);
     return ["All", ...Array.from(new Set(all))];
@@ -31,7 +30,6 @@ export default function Projects() {
           subtitle="A few things I've built while learning and experimenting. Filter by technology to explore."
         />
 
-        {/* ---------- Technology filter ---------- */}
         <div className="projects__filters" role="tablist" aria-label="Filter projects by technology">
           {technologies.map((tech) => (
             <button
@@ -46,7 +44,6 @@ export default function Projects() {
           ))}
         </div>
 
-        {/* ---------- Project grid ---------- */}
         <motion.div
           className="projects__grid"
           variants={staggerContainer(0.12)}
@@ -64,7 +61,6 @@ export default function Projects() {
         </motion.div>
       </div>
 
-      {/* ---------- Detail modal ---------- */}
       <AnimatePresence>
         {selected && (
           <ProjectModal project={selected} onClose={() => setSelected(null)} />

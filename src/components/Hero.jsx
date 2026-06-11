@@ -14,7 +14,6 @@ export default function Hero() {
   return (
     <section id="home" className="hero section">
       <div className="container hero__grid">
-        {/* ---------- Left: profile image with floating glow ---------- */}
         <motion.div
           className="hero__image-wrap"
           variants={scaleIn}
@@ -33,7 +32,6 @@ export default function Hero() {
           <span className="hero__badge glass">Open to work</span>
         </motion.div>
 
-        {/* ---------- Right: text content ---------- */}
         <motion.div
           className="hero__content"
           variants={staggerContainer(0.12)}
@@ -71,7 +69,6 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* ---------- Stat cards ---------- */}
       <motion.div
         className="container hero__stats"
         variants={staggerContainer(0.1)}
@@ -85,7 +82,6 @@ export default function Hero() {
         ))}
       </motion.div>
 
-      {/* ---------- Detailed About / Objective / Education ---------- */}
       <div className="container hero__about">
         <motion.div className="hero__about-text" variants={fadeInUp} {...revealOnScroll}>
           <h3 className="hero__about-title">

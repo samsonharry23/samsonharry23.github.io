@@ -13,7 +13,7 @@ const ProjectCard = forwardRef(function ProjectCard({ project, onOpen }, ref) {
       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
       className="project-card glass"
     >
-      {/* Cover image — clicking it opens the detail modal */}
+
       <button
         className="project-card__media"
         onClick={onOpen}

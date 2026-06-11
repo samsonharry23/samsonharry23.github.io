@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import "./Loader.css";
 
-// Full-screen intro shown while the page boots.
 export default function Loader() {
   return (
     <div className="loader" role="status" aria-label="Loading portfolio">

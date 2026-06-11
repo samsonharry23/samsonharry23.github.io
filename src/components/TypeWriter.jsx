@@ -1,9 +1,5 @@
 import { useEffect, useState } from "react";
 
-/**
- * Cycles through an array of words with a typing / deleting animation.
- * Used for the role text in the Hero section.
- */
 export default function TypeWriter({
   words,
   typingSpeed = 90,
@@ -17,13 +13,10 @@ export default function TypeWriter({
   useEffect(() => {
     const current = words[wordIndex % words.length];
 
-    // Decide what the next frame should show.
     let timeout;
     if (!deleting && text === current) {
-      // Finished typing → pause, then start deleting.
       timeout = setTimeout(() => setDeleting(true), pause);
     } else if (deleting && text === "") {
-      // Finished deleting → move to the next word.
       setDeleting(false);
       setWordIndex((i) => (i + 1) % words.length);
     } else {

@@ -1,4 +1,3 @@
-/* ---------- Filter buttons ---------- */
 .projects__filters {
   display: flex;
   flex-wrap: wrap;
@@ -29,14 +28,12 @@
   border-color: transparent;
 }
 
-/* ---------- Grid ---------- */
 .projects__grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.75rem;
 }
 
-/* ---------- Card ---------- */
 .project-card {
   overflow: hidden;
   display: flex;
@@ -103,7 +100,6 @@
 .project-card__desc {
   color: var(--text-muted);
   font-size: 0.92rem;
-  /* Keep card heights tidy by clamping the preview text. */
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -133,7 +129,6 @@
   margin-top: auto;
 }
 
-/* Smaller button variant for cards. */
 .btn-sm {
   padding: 0.55rem 1rem;
   font-size: 0.85rem;
