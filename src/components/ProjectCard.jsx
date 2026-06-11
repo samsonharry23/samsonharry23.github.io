@@ -1,15 +1,16 @@
 import { forwardRef } from "react";
 import { motion } from "framer-motion";
 import { FiGithub, FiExternalLink, FiArrowUpRight } from "react-icons/fi";
-import { fadeInUp } from "../utils/motion";
 
 const ProjectCard = forwardRef(function ProjectCard({ project, onOpen }, ref) {
   return (
     <motion.article
       ref={ref}
       layout
-      variants={fadeInUp}
+      initial={{ opacity: 0, y: 32 }}
+      animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, scale: 0.9 }}
+      transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
       className="project-card glass"
     >
       {/* Cover image — clicking it opens the detail modal */}
