@@ -7,6 +7,16 @@
 
 export const projects = [
   {
+    id: 5,
+    title: "StayManager",
+    description:
+      "A hotel room-booking management dashboard for staff to manage rooms, bookings, guests, and settings. Features full room CRUD with photo uploads, dark mode, and advanced React patterns like compound components (Modal, Table, Menus). Built with React Query for server state and Supabase as the backend.",
+    image: "/images/projects/staymanager.svg",
+    github: "https://github.com/samsonharry23/staymanager",
+    demo: "https://samsonharry23.github.io/staymanager/",
+    tech: ["React", "JavaScript", "CSS"],
+  },
+  {
     id: 4,
     title: "QuickBite",
     description:
